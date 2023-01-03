@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input Tag</title>
+</head>
+<body>
+    <h2>This is Forms and Input Tag</h2>
+    <!-- <form action isused to create boxes to fill the form. BACKEND.PHP, we're just indicating this to store the data in Backend using the php. -->
+    <form action="backend.php">
+        <!-- <div></div> is a block line element, which consumes the whole width line. This tag is use to break the line. While <br> tag is use to break inline. -->
+        <div>
+            <!-- <input type="Subject" name="Subject description">
+            input, type & name are the few which make able to make a page link form filling. -->
+            Name: <input type="text" name="myName">
+        </div>
+        <br>
+        <div>
+            Designation: <input type="text" name="userDesignation">
+        </div>
+        <br>
+        <div>
+            Email: <input type="Email" name="userEmail">
+        </div>
+        <!-- This one makes enable to SUBMIT the whole process or form. -->
+        <br>
+        <!-- This makes enable to select the whole calendar. -->
+        <div>
+            Date: <input type="date" value="Submit Date" name="userDate">
+        </div>
+        <br>
+        <!--  Age: <input type="word" value="userAge"> :- This makes enable to select the number from intial to last. -->
+        <div>
+            Age: <input type="number" name="userAge">
+        </div>
+        <br>
+        <div>
+            Are you married: <select name="Married" id="marriage">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            Gender: Male<input type="radio" name="myGender"> Female<input type="radio" name="myGender"> Transgender<input type="radio" name="myGender">
+        </div>
+        <br>
+        <div>
+            About Yourself:- <br><textarea name="myText" cols="27" rows="5"></textarea>
+        <div> 
+        <br>
+        <div>
+            <label for="Car">Car</label>
+            <select name="myCar" id="Car">
+                <option value="Scorpio">Scorpio</option>
+                <option value="Gypsy">Gypsy</option>
+                <option value="Range Rover">Range Rover</option>
+                <!-- SELECETD for compulsory option, simply write SELECTED. -->
+                <option value="TATA SAFARI">TATA SAFARI</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Here">
+            <br>
+            <input type="reset" value="Reset the space">
+        </div>
+        
+        
+    </form>
+</body>
+</html>
