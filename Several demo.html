@@ -1,0 +1,88 @@
+<html>
+    <head>JAVASCRIPT tutorial</head>
+    <body>
+        <p id="demo"></p>
+    </body>
+    <script>
+        let cars= ["Audii", "Thar", "TATA SAFARI"];
+        document.getElementById("demo").innerHTML= cars;
+        
+        let Thar= cars[1];
+        document.getElementById("demo").innerHTML= Thar; 
+
+        let len= cars.length;
+        document.getElementById("demo").innerHTML= len;
+
+        let last= cars[cars.length -1];
+        document.getElementById("demo").innerHTML= last;
+
+        cars.forEach((item,index,array)=>{console.log(item, index);});
+        
+        document.getElementById("demo").innerHTML= cars.toString();
+
+        let last1= cars.pop();
+        document.getElementById("demo").innerHTML= last;
+        let last2= cars[cars.length -1];
+        console.log(last2);
+
+        cars.push("RANGE ROVER");
+        document.getElementById("demo").innerHTML= cars;
+        
+        cars.shift();
+        document.getElementById("demo").innerHTML= cars;
+
+        cars.unshift("GYPSY");
+        document.getElementById("demo").innerHTML= cars;
+
+        let bikes= ["Royal Enfield", "Yamaha", "Java"];
+        let vehicles= cars.concat(bikes);
+        document.getElementById("demo").innerHTML= vehicles;
+
+        vehicles.sort();
+        document.getElementById("demo").innerHTML= vehicles;
+
+        
+
+        
+
+
+
+        
+        
+     
+
+
+            
+
+
+
+</script></html>
+
+<!-- getElementById is use to return element with specified value & used everytime to read or edit HTML element. --> 
+    <!-- let Thar= cars[2]; "cars[number]" decide which element will print.  -->
+
+<!-- To CALL an ARRAY:- 
+    USE THIS < let Thar= cars[1];
+    document.getElementById("demo").innerHTML= Thar;> -->
+
+<!-- To retreive the lemgth of the Array:-        
+    let len= cars.length;
+    document.getElementById("demo").innerHTML= len -->
+
+<!-- To call the last element of Array:-
+  let last= cars[cars.length -1];
+  document.getElementById("demo").innerHTML= last; -->
+
+<!-- Loop over an Array Item:-
+    cars.forEach((item,index,array)=>{console.log(item, index);});-->
+
+<!-- Array into string:- document.getElementById("demo").innerHTML= cars.toString(); -->
+
+<!-- To remove element from array(It'll show the element that has been removed):- 
+    let last1= cars.pop();
+    document.getElementById("demo").innerHTML= last;
+    let last2= cars[cars.length -1];
+    console.log(last2); -->
+
+<!-- To add the element at the end of the end OF ARRAY:-
+-->  
